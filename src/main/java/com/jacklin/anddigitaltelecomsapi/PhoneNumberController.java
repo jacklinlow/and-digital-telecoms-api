@@ -53,19 +53,22 @@ public class PhoneNumberController {
 
 
     @RequestMapping(method = RequestMethod.PUT, value = "/api/phonenumbers/{phonenumber}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody PhoneNumber
-    activatePhoneNumber(@PathVariable("phonenumber") String phonenumber) {
+    public @ResponseBody List<PhoneNumber>
+    activatePhoneNumber(@PathVariable("phonenumber") String phonenumber, HttpServletResponse response) {
 
-        PhoneNumber phoneNumber  = customerData.getCustomerData()
+        List<PhoneNumber> phoneNumber  = customerData.getCustomerData()
                 .stream()
                 .map(Customer::getPhoneNumbers)
                 .flatMap(List::stream)
                 .filter(x -> x.getNumber().equals(phonenumber))
-                .findFirst().get();
+                .collect(Collectors.toList());
 
-        phoneNumber.setActivated(true);
+        if(!phoneNumber.isEmpty()) {
+            phoneNumber.get(0).setActivated(true);
+        } else {
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+        }
         return phoneNumber;
-
     }
 
 }

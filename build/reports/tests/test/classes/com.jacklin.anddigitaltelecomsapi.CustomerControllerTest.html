@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.jacklin.anddigitaltelecomsapi.CustomerControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.jacklin.anddigitaltelecomsapi.CustomerControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.jacklin.anddigitaltelecomsapi.html">com.jacklin.anddigitaltelecomsapi</a> &gt; CustomerControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.000s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGetPhoneNumbersByCustomerIdRequestReturnsAllPhoneNumbersOfACustomerWithThreeNumbers</td>
+<td class="success">0.193s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPhoneNumbersByCustomerIdRequestReturnsHttpResponse404ForANonExistentCustomer</td>
+<td class="success">0.197s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPhoneNumbersByCustomerIdRequestReturnsNoPhoneNumbersForANonExistentCustomer</td>
+<td class="success">0.177s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPhoneNumbersByCustomerIdRequestReturnsOnePhoneNumberOfACustomerWithOneNumber</td>
+<td class="success">0.145s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPhoneNumbersRequestReturnsAllPhoneNumbers</td>
+<td class="success">0.244s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPutPhoneNumbersRequestWithNonExistentNumberInParameterReturnsHttpResponse404</td>
+<td class="success">0.427s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPutPhoneNumbersRequestWithPhoneNumberInParameterSetsActivatedToTrue</td>
+<td class="success">1.617s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2018-04-24 10:42:44.730  INFO 1576 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jacklin.anddigitaltelecomsapi.CustomerControllerTest], using DelegatingSmartContextLoader
+2018-04-24 10:42:44.740  INFO 1576 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jacklin.anddigitaltelecomsapi.CustomerControllerTest]: no resource found for suffixes {-context.xml}.
+2018-04-24 10:42:44.778  INFO 1576 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jacklin.anddigitaltelecomsapi.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-04-24 10:42:44.835  INFO 1576 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-04-24 10:42:44.845  INFO 1576 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3c651d8a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41580b44, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3cfc5572, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1988218c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d95f67a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c16dea7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@521f5d92, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a43821c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@28c78308, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@121e9351, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ac5bf4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2c80996b]
+2018-04-24 10:42:45.082  INFO 1576 --- [    Test worker] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@2d8b8115: startup date [Tue Apr 24 10:42:45 BST 2018]; root of context hierarchy
+2018-04-24 10:42:45.591  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:45.596  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:45.597  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:45.723  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2529b5f2
+2018-04-24 10:42:45.795  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:45.808  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:45.813  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2018-04-24 10:42:47.116  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.123  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.134  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:47.265  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7f9c354d
+2018-04-24 10:42:47.283  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:47.285  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:47.290  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 5 ms
+2018-04-24 10:42:47.429  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.464  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.475  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:47.750  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@631f1341
+2018-04-24 10:42:47.771  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:47.775  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:47.777  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-04-24 10:42:47.813  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.823  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:47.825  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:47.916  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@77b72599
+2018-04-24 10:42:47.930  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:47.934  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:47.939  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2018-04-24 10:42:48.017  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.026  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.027  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:48.146  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@6cd181e
+2018-04-24 10:42:48.161  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:48.162  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:48.166  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2018-04-24 10:42:48.215  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.222  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.228  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:48.314  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@1f488307
+2018-04-24 10:42:48.340  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:48.347  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:48.356  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-04-24 10:42:48.407  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/customers/{customerid}/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbersByCustomerId(int,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.409  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers/{phonenumber}],methods=[PUT],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.activatePhoneNumber(java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-04-24 10:42:48.413  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/api/phonenumbers],methods=[GET],produces=[application/json]}&quot; onto public java.util.List&lt;com.jacklin.anddigitaltelecomsapi.PhoneNumber&gt; com.jacklin.anddigitaltelecomsapi.PhoneNumberController.getPhoneNumbers()
+2018-04-24 10:42:48.508  INFO 1576 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3a7464e7
+2018-04-24 10:42:48.518  INFO 1576 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-04-24 10:42:48.518  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-04-24 10:42:48.519  INFO 1576 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.7</a> at 24-Apr-2018 10:42:49</p>
+</div>
+</div>
+</body>
+</html>

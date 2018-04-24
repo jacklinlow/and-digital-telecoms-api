@@ -74,12 +74,20 @@ public class CustomerControllerTest {
     }
 
     @Test
-    public void testPutPhoneNumbersRequestWithNumberInParameterSetsActivatedToTrue() throws Exception {
-        String expectedJsonResponse = "{\"number\":\"07486154863\",\"activated\":true}";
+    public void testPutPhoneNumbersRequestWithPhoneNumberInParameterSetsActivatedToTrue() throws Exception {
+        String expectedJsonResponse = "[{\"number\":\"07486154863\",\"activated\":true}]";
 
         mockMvc.perform(put("/api/phonenumbers/07486154863"))
                 .andExpect(status().isOk())
                 .andExpect(content().json(expectedJsonResponse));
     }
+
+    @Test
+    public void testPutPhoneNumbersRequestWithNonExistentNumberInParameterReturnsHttpResponse404() throws Exception {
+
+        mockMvc.perform(put("/api/phonenumbers/07486154866"))
+                .andExpect(status().isNotFound());
+    }
+
 
 }
